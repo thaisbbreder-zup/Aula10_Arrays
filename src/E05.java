@@ -1,13 +1,5 @@
 /* 5. Criar um programa que calcule a média de salários de uma empresa, pedindo ao usuário a grade de funcionários e
 os salários, e devolvendo a média salarial.
-
-1. Solicitar a quantidade de funcionários;
-2. criar uma variável para somar os salários;
-3. criar lista de funcionários inicialmente vazia;
-4. loop para iterar o salário até a quantidade de funcionários informados;
-5. dentro do loop solicitar o salário e somar na variável de soma dos salários;
-6. quando finalizar, calcular a média;
-
  */
 
 import java.text.DecimalFormat;
@@ -27,6 +19,7 @@ public class E05 {
         double somaSalario = 0;
         DecimalFormat df = new DecimalFormat("#.##");
 
+        //loop para solicitar o nome e salario do funcionário, armazenando ambos em variáveis e na matriz
         for (int i = 0; i < qntFuncionarios; i++) {
             System.out.print("Informe o nome do funcionário: ");
             String nome = (entradaDoUsuario.next());
